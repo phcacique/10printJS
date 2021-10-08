@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+canvas {
+    background-color: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+article {
+    position: relative;
+}
+
+article * {
+    position: absolute;
+}
+
+form {
+    margin: 50px 20px 20px 20px;
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+input[type='number'] {
+    width: 40px;
+    border-radius: 2px;
+    border: solid 1px #e7e7e7;
+    padding: 4px 4px 4px 8px;
+}
+
+fieldset {
+    background-color: #fafafa;
+    border: none;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+input[type='radio'] {
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    background-color: #5eb8fa;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label {
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3),
+only screen and (min-device-width : 375px) and (max-device-width : 667px),
+only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    * {
+        font-size: 1.2em
+    }
+
+    button {
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+    input[type='number'] {
+        width: 100px;
+        border-radius: 8px;
+    }
+
+    input[type='radio'] {
+        width: 40px;
+        height: 40px;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form{
+        margin: 0 20px;
+    }
+
+}
